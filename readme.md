@@ -22,4 +22,4 @@ At some point, it may be preferable to have individual data objects for each kpi
 
 The dashboard itself is written using svelte which is a js framework/compiler similar to react/vue/angular. The agents are all powershell jobs currently although they could be anything as long as they drop the data in the same spot and the right format.
 
-At the time of this writing, the application is stored on github in a private repo. All commits are auto-deployed to vnext. Production is auto-deployed upon release.
+Currently this app is stored in a public repo, so no secrets or private info should be located here. Currently these KPIs are not secret as they are basic measurements for business processes that are typical for any business in this industry.
