@@ -1,0 +1,1 @@
+export const graphContentEndpoint = "https://graph.microsoft.com/v1.0/drives/b!Up4Du06g6UmFLFC2pNFM4H1p3oaPI9BFm2cBaJXJLUAPtpaJva0iQbeS1uYffokM/root/children?$select=name,lastModifiedDateTime,content.downloadUrl"

@@ -1,0 +1,134 @@
+body {
+  padding-top: 4rem;
+}
+.chart-area {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+}
+.smaller-text {
+  font-size:.7rem;
+}
+.missing-paperwork, .hl-yellow {
+  background-color: rgba(255, 255, 82, 0.918) !important;
+}
+.has-one-paperwork, .hl-blue {
+  background-color: rgba(82, 255, 255, 0.918) !important;
+}
+.hl-red {
+  background-color: rgba(255, 193, 204, 0.918) !important;
+}
+.has-multiple-pages, .hl-green {
+  background-color: rgb(205, 255, 193, 0.918) !important;
+}
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.table-alert {
+  display: none;
+}
+
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+@media (min-width: 992px) {
+  .container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 991px; /* or 950px */
+  }
+}
+
+@media (max-width: 450.98px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .chart-area {
+    height: 20rem;
+  }
+  .card,
+  .card-header,
+  .card-footer,
+  .chart-area {
+    border: none;
+    margin: none;
+  }
+  .card-header span {
+    font-size: 3.5vw;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #808080;
+    width: 100%;
+    text-align: center;
+  }
+  .card {
+    margin-bottom: 1rem;
+  }
+  .card-footer,
+  .card-header.bg-light {
+    background-color: white !important;
+  }
+  table,
+  .btn,
+  .card-footer {
+    font-size: 2.5vw;
+  }
+  a.nav-link {
+    font-size: 3.25vw;
+  }
+}
+
+  /* Inspired by:
+  https://css-tricks.com/responsive-data-tables/ */
+
+  /* // Medium devices (tablets, less than 992px) */
+  @media (max-width: 991.98px) {
+    /* Force table to not be like tables anymore */
+    div.twist *
+    {
+      display: block;
+    }
+
+    /* Hide table headers. */
+    div.twist thead tr {
+      display: none;
+    }
+
+    div.twist tr {
+      border: 1px solid #ccc;
+      margin-bottom: 5px;
+      font-size: 1rem;
+    }
+
+    div.twist td {
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 50%;
+      text-align:right !important;
+    }
+
+    div.twist td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      /* inject the content from myval a custom attribute to hold the header name */
+      content: attr(myval);
+    }
+  }
