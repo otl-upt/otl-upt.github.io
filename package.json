@@ -10,7 +10,7 @@
     "cv": "rm -rf build dist node_modules/.vite && npm install"
   },
   "devDependencies": {
-    "@azure/msal-browser": "^4.25.0",
+    "@azure/msal-browser": "^4.27.0",
     "@sveltejs/vite-plugin-svelte": "^2.5.3",
     "bootstrap": "^5.3.8",
     "chart.js": "^4.5.1",
